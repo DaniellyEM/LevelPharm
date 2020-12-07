@@ -7,7 +7,7 @@
     </head>
     <body>
         <div id = "wrap">
-            <div id = "menu-principal">  <!--Corrigir-->
+            <div id = "menu-principal">
                 <nav class = "barra-menu">
                     <div class = "logo-superior">
                         <a href = "#inicio"> <img src = "img/LOGO LEVELPHARM-WHITE.png"/> </a>
@@ -21,7 +21,7 @@
                 </nav>
             </div>
 
-            <aside id = "barra-lateral">  <!--CORRIGIR: referÊnciar sem poluir o css-->
+            <aside id = "barra-lateral">
                 <div class = "icone-contato">
                     <li> <a href = "#contato"> <img src = "img/icone-contato.png" alt = "icone contato"/> </a> </li>
                     </div>
@@ -41,35 +41,34 @@
                     <div class = "local-grid">
                         <form class = "formulario">
                             <label > <strong>Nome:</strong> </label>
-                            <input type = "text" placeholder = " " /> 
+                            <input type = "text"/> 
 
                             <label> <strong>E-mail:</strong> </label>
-                            <input type = "text" placeholder = "" />
+                            <input type = "text"/>
 
                             <label> <strong>Telefone:</strong> </label>
-                            <input type = "text" placeholder = ""/>
+                            <input type = "text"/>
 
                             <label> <strong>Assunto:</strong> </label>
-                            <input type: = "text" placeholder = "">
+                            <input type: = "text"/>
                             
                             <label> <strong>Deixe sua mensagem:</strong> </label>
                             <textarea></textarea>
 
                             <input class = "botao-enviar" type = "submit" value = "Enviar"/>
-
                         </form>
                     </div>
                 </div>
             </section>
                
             <footer>
-                <div id = "rodape">  <!--CORRIGIR: colocar logo-->
+                <div id = "rodape">
                     <div class = " rodape-grid" > 
                         <a href = "#menu-principal"> <img class = "logo-inferior" src = "img/LOGO LEVELPHARM.png"> </a>
                     </div>
 
                     <div class = "rodape-grid">
-                        <div id = "contato">  <!--CONCLUIR-->
+                        <div id = "contato">
                             <h2>Entre em contato conosco</h2>
                             <br/>
                             <p>Endereço: Av. Prof. Moraes Rego, 844-900 - Cidade Universitária, <br/> Recife - PE, 50670-420</p>                                
