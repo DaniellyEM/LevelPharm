@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+a:link, a:visited {
+    color: #193094;
+    text-decoration: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border-style: none;
+    font-family: Bold; 
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Goldman, bold;
+}
+
+.barra-menu{
+    top: 0;
+    padding: 4.5vh 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+.menu-navegacao{
+    background-color: #ffffff;
+    list-style: none;
+
+    display: flex;
+    flex-direction: row; 
+    height: 30%;
+    width: 40%;
+    padding-left: 8%;
+}
+.menu{
+    position: left;
+    align-items: center;
+  
+
+    margin: 4vh 2vw;
+    float: right;
+}
+
+/*NavBar: Logo*/
+.logo-superior img{
+    height: 15vh;
+    margin-left: 30%;
+}
+
+/*Contato fixo*/
+.icone-contato img{ 
+    width: calc(5px + 4vw);
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #193094;
+    border-radius: 50px;
+    float: right;
+}
+.icone-contato img:hover{ 
+    width: calc(5px + 5vw);
+    background-color: #ffffff;
+    box-shadow: 1px 2px 20px #193094;
+    transition: 1.5s;
+}
+#barra-lateral{
+    position: fixed;
+    right: 3%;
+    top: 50%;
+    bottom: 50%;
+    padding: 1%;
+    list-style: none;
+}
+
+/*SESSÃO: CONTATO*/  
+.cont{
+    display: flex;
+    flex-direction: row;
+    background-color: inherit;
+}
+
+.logo-central{
+    width: 15%;
+
+    display:block;
+    margin-left: auto;
+    margin-right: 2.5%;
+
+}
+.cont h3{
+    display: block;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: 2.5%;
+
+    color: #193094;
+    letter-spacing: 2px;
+}
+#contato p{
+    margin: 5px;
+}
+
+#localizacao{
+    margin: 0vh 10vw;
+}
+.local { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+}
+.local-grid{
+    border-radius: 4px;
+    padding: 2%;
+    margin: 8%;
+    flex-grow: 1;
+}
+
+.mapa{
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+
+    margin: 5.5vh 0vw 2vh 5vw;
+
+    width: calc(1px + 32vw);;
+    height: calc(1px + 32vw);;
+}
+
+/*Formulário*/
+form{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 0%;
+}
+.formulario label {
+    color: #193094;
+    font-size: calc(2px + 1.5vw);
+}
+.formulario input{
+    color: inherit;
+    height: calc(2px + 2vw);
+    margin: 1vh 0;
+    box-shadow: 0 0 2px #193094;
+}
+.formulario textarea{
+    margin: 1vh 0;
+    height: calc(1px + 5vw);;
+    box-shadow: 0 0 2px #193094;
+}
+.botao-enviar{
+    font-size: 3vh;
+    height: calc( 1px + 6vh);
+    width: 8vw;
+
+    border-radius: 5px;
+    box-shadow: 0 0 10px #193094;
+
+    cursor: pointer;
+
+    background-color: #ffffff;
+    color: #193094;
+    font-family: Goldman;
+    font-size: calc(2px + 1.5vw);
+    text-align: center;
+}
+.botao-enviar:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+
+    background-color: #193094;
+    color: #ffffff
+}
+
+/*RODAPÉ*/
+footer {
+    background: linear-gradient( to left, #193094, #7bddee); /*cor tem que ser toda igual*/
+    padding: calc(1px + 2vh) 0vw 0vh;
+}
+
+#rodape{
+    display: grid; 
+    margin: 0;
+    grid-template-columns: 1fr 1fr 1fr;  
+}
+.rodape-grid{ 
+    background-color: inherit;
+    background-image: inherit;
+    flex-grow: 1;  
+}
+
+.logo-inferior{ 
+    grid-column: 1;
+    grid-row: 1;
+
+    float: left;
+    margin-left: 4vw;
+    width: 80%;
+}
+#contato{ 
+    margin: 25% 9% 0%;
+    width: 80%;
+    grid-column: 2;
+    grid-row: 1;
+}
+#contato h2{
+    font-family: Goldman;
+    font-size: calc(2px + 1.5vw);
+    text-align: center;
+    color: #ffffff;
+}
+#contato p{
+    font-family: Goldman;
+    font-size: calc(2px + 1vw);
+    text-align: center;
+    color: #ffffff;
+}
+.Redes {
+    align-items: center;
+    display: flex;
+    flex-direction: row; 
+    margin: 30% 0vw 4% 10%;
+}
+.redes-sociais{ 
+    display: inline;
+    grid-column: 3;
+    grid-row: 1;
+    list-style: none;
+    border-radius: 5px;
+    margin-right: 3vw;
+}
+.redes-sociais img{
+    width: 4vw;
+    border-radius: 50px;
+}
+.redes-sociais img:hover{
+    box-shadow:  0 0 10px #ffffff;;
+}
+
+.copyright{
+    background-color: rgb(25, 49, 100);
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 0%;
+    padding: calc(2px + 0.15vw) 0%;
+}
+
+.icone-copyright{
+    width: calc(1px + 1vw);
+    border-radius: 10px;
+}
